@@ -54,9 +54,9 @@
 
         <!-- Name -->
         <div class="col-span-6 sm:col-span-4">
-            <x-label for="name" value="{{ __('Name') }}" />
-            <x-input id="name" type="text" class="mt-1 block w-full" wire:model.defer="state.name" autocomplete="name" />
-            <x-input-error for="name" class="mt-2" />
+            <x-label for="nom" value="{{ __('Name') }}" />
+            <x-input id="nom" type="text" class="mt-1 block w-full" wire:model.defer="state.nom" autocomplete="nom" />
+            <x-input-error for="nom" class="mt-2" />
         </div>
 
         <!-- Email -->

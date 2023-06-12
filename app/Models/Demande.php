@@ -11,10 +11,7 @@ class Demande extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'nom',
-        'prenom',
-        'email',
-        'telephone',
+        'user_id',
         'type',
         'etat',
     ];

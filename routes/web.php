@@ -35,7 +35,7 @@ Route::middleware([
 });
 
 
-Route::post('/mesDemande', [DemandeController::class, 'index']);
+Route::get('/mesDemandes', [DemandeController::class, 'index']);
 Route::post('/add_demande', [DemandeController::class, 'store']);
 Route::get('/update_demande/$id', [DemandeController::class, 'update']);
 Route::get('/delete_demande/$id', [DemandeController::class, 'delete']);
