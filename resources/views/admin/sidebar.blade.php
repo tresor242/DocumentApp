@@ -67,7 +67,7 @@
       </li>
 
       <li class="nav-item menu-items mt-3">
-        <a class="nav-link" href="{{url('showdemand')}}">
+        <a class="nav-link" href="{{url('liste-demandes')}}">
           <span class="menu-icon">
             <i class="mdi mdi-file-document-box"></i>
           </span>

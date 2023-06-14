@@ -44,3 +44,5 @@ Route::get('/delete_demande/$id', [DemandeController::class, 'delete']);
 Route::get('/add_document_view', [AdminController::class, 'addview']);
 
 Route::post('/upload_document', [AdminController::class, 'upload']);
+
+Route::get('/liste-demandes', [AdminController::class, 'liste']);
