@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Document;
+use App\Models\Demande;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -35,4 +36,8 @@ class AdminController extends Controller
         return redirect()->back()->with('message','Document ajouté avec succès');
     }
 
+    public function liste(){
+        $demande = Demande::all();
+        return view('admin.liste-demande',compact('demande'));
+    }
 }

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\DemandeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,6 +35,14 @@ Route::middleware([
 });
 
 
+Route::get('/mesDemandes', [DemandeController::class, 'index']);
+Route::post('/add_demande', [DemandeController::class, 'store']);
+Route::get('/update_demande/$id', [DemandeController::class, 'update']);
+Route::get('/delete_demande/$id', [DemandeController::class, 'delete']);
+
+
 Route::get('/add_document_view', [AdminController::class, 'addview']);
 
 Route::post('/upload_document', [AdminController::class, 'upload']);
+
+Route::get('/liste-demandes', [AdminController::class, 'liste']);

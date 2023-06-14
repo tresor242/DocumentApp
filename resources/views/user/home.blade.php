@@ -56,7 +56,12 @@ https://templatemo.com/tm-589-lugx-gaming
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                      <li><a href="index.html" class="active">Accueil</a></li>
+                      <li><a href="/" class="active">Accueil</a></li>
+                      @if (Route::has('login'))
+                      @auth
+                      <li><a href="/mesDemandes" >Mes demandes</a></li>
+                      @endauth
+                      @endif
                       <li><a href="shop.html">Documents</a></li>
                       <li><a href="product-details.html">Documents Details</a></li>
                       <li><a href="contact.html">Nous Contacter</a></li>
@@ -133,7 +138,7 @@ https://templatemo.com/tm-589-lugx-gaming
   <footer>
     <div class="container">
       <div class="col-lg-12">
-        <p>Copyright © 2048 LUGX Gaming Company. All rights reserved. &nbsp;&nbsp; <a rel="nofollow" href="https://templatemo.com" target="_blank">Design: TemplateMo</a></p>
+        <p>Copyright © 2048 Groupeisi. All rights reserved. &nbsp;&nbsp; <a rel="nofollow" href="https://templatemo.com" target="_blank">Design: TemplateMo</a></p>
       </div>
     </div>
   </footer>
