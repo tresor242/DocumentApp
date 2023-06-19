@@ -27,17 +27,15 @@ class HomeController extends Controller
         }
     }
 
-    public function index()
-    {
-        /*if (Auth::id()) 
+    public function index(){
+    if (Auth::id()) 
         {
             return redirect('home');
-        }*/
-      /*  else
-        {*/
+        }
+        else
+        {
              $document = Document::all();
-       // return view('user.home'/*, compact('doctor')*/);
-       // }
-        return view('user.home', compact('document'));
+             return view('user.home', compact('document'));
+        }
     }
 }

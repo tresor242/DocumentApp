@@ -89,7 +89,7 @@
           <td>{{$d->user->email}}</td>
           <td>{{$d->user->telephone}}</td>
           <td>{{$d->etat}}</td>
-          <td><i  class="bi bi-pencil"></i>  </td>
+          <td><a class="btn btn-danger" onclick="return confirm('are you sure to delet this')" href="{{url('cancel_demande', $demandes->id)}}">Delete</a>  </td>
           
         </tr>
         @endforeach
